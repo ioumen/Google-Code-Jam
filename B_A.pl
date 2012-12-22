@@ -19,7 +19,9 @@ foreach(@array[1..$#array]) {
 	($N,$S,$p) = (@case[0..2]);
 	@t = @case[3..$#case];
 	$count = 0; $other = 0;
-	
+
+##Core code
+
 	if ($p==0){
 		$result= @t;
 	}elsif($p==1){
@@ -49,6 +51,7 @@ foreach(@array[1..$#array]) {
 }
 close(Input);
 
+##Write results into a new file
 
 open(Output,">output.txt");
 $i=1;
